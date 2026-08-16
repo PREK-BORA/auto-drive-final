@@ -123,7 +123,7 @@ export default function VehiclesPage() {
               placeholder="Search by name or brand..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-lg border border-slate-300 bg-white py-3 pl-11 pr-4 outline-none transition focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+              className="w-full rounded-lg border border-gray-30 bg-white py-3 pl-11 pr-4 outline-none transition  focus:ring-2 focus:ring-blue-100"
             />
           </div>
 

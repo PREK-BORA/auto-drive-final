@@ -1,23 +1,3 @@
-// ============================================================
-// Firebase Configuration & Initialization
-// ============================================================
-//
-// This file sets up the connection to Firebase services:
-//   - Authentication
-//   - Firestore Database
-//   - Storage
-//
-// HOW TO USE:
-//   1. Create a Firebase project at https://console.firebase.google.com
-//   2. Add a web app to get your config values
-//   3. Create a `.env` file in the project root (see `.env.example`)
-//   4. Paste your values into the environment variables below
-//   5. Restart the dev server
-//
-// If no Firebase config is provided, the app runs in "MOCK MODE"
-// using sample data stored in localStorage. This lets you see the
-// app working immediately before connecting a real Firebase project.
-// ============================================================
 
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";

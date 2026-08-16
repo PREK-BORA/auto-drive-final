@@ -183,7 +183,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileOpen((prev) => !prev)}
-          className="rounded-xl p-2 text-white transition-colors hover:bg-white/10 active:scale-95 md:hidden"
+          className="rounded-xl p-2 text-gray-900 transition-colors hover:bg-white/10 active:scale-95 md:hidden"
           aria-label="Toggle menu"
         >
           {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -221,7 +221,7 @@ export default function Navbar() {
             <div className="space-y-1 pt-1">
               <button
                 onClick={goToDashboard}
-                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-blue-100 hover:bg-white/10"
+                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-gray-900 hover:bg-white/10"
               >
                 <LayoutDashboard size={18} />
                 Dashboard
@@ -229,7 +229,7 @@ export default function Navbar() {
 
               <button
                 onClick={goToProfile}
-                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-blue-100 hover:bg-white/10"
+                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-gray-900 hover:bg-white/10"
               >
                 <User size={18} />
                 Profile
@@ -237,7 +237,7 @@ export default function Navbar() {
 
               <button
                 onClick={handleLogout}
-                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-red-300 hover:bg-white/10"
+                className="flex w-full items-center gap-3 rounded-xl px-4 py-2.5 text-left text-sm font-medium text-red-600 hover:bg-white/10"
               >
                 <LogOut size={18} />
                 Logout

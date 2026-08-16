@@ -163,7 +163,7 @@ export default function ContactPage() {
             <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
 
               <div className="mb-6">
-                <span className="inline-block rounded-full bg-blue-500 px-4 py-2 text-sm font-semibold text-white">
+                <span className="inline-block rounded-full bg-yellow-400 px-4 py-2 text-sm font-semibold text-white">
                   Send us a message
                 </span>
               </div>
@@ -257,7 +257,7 @@ export default function ContactPage() {
                       value={formData.message}
                       onChange={handleChange}
                       placeholder="Write your message..."
-                      className={`w-full resize-none rounded-lg border px-5 py-4 outline-none transition focus:ring-2 ${
+                      className={`w-full resize-none  rounded-lg border px-5 py-4 outline-none transition focus:ring-2 ${
                         errors.message
                           ? "border-red-500 focus:ring-red-200"
                           : " focus:border-blue-500 focus:ring-blue-200"
