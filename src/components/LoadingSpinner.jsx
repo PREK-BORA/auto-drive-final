@@ -1,10 +1,7 @@
 // ============================================================
 // LoadingSpinner Component
 // ============================================================
-//
-// A simple reusable loading indicator shown while data is
-// being fetched from the backend.
-// ============================================================
+
 
 import { Box, CircularProgress, Typography } from '@mui/material'
 

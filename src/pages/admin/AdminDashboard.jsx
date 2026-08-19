@@ -1,10 +1,6 @@
 // ============================================================
 // Admin Dashboard - Overview Page
-// ============================================================
-//
-// Shows summary statistics (total users, vehicles, services,
-// messages) and a simple chart.
-// ============================================================
+
 
 import { useEffect, useState } from 'react'
 import { Box, Grid, Card, CardContent, Typography, Paper } from '@mui/material'

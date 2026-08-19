@@ -1,10 +1,7 @@
 // ============================================================
 // Footer Component
-// ============================================================
-//
-// Shown at the bottom of every public page. Contains company
-// info, quick links, and contact details.
-// ============================================================
+// ===========================================================
+
 
 import { Link } from 'react-router-dom'
 import { Typography, Box, Container, Grid, IconButton, Divider } from '@mui/material'
