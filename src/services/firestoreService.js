@@ -1,27 +1,4 @@
-// ============================================================
-// Firestore Service Layer
-// ============================================================
-//
-// This file handles all database operations for the application.
-//
-// Firebase mode:
-//   - Uses Firebase Firestore
-//
-// Mock mode:
-//   - Uses mockData.js
-//
-// IMPORTANT:
-//   Images are NOT uploaded here.
-//
-// Image flow:
-//   React
-//      ↓
-//   Cloudinary
-//      ↓
-//   image URL
-//      ↓
-//   this service
-//      ↓
+
 //   Firebase Firestore
 //
 // Firestore stores the Cloudinary image URLs.

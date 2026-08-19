@@ -1,12 +1,6 @@
 // ============================================================
 // Firebase Storage Service
-// ============================================================
-//
-// Handles image uploads to Firebase Storage.
-// In mock mode, images are returned as-is (the URL is stored
-// directly without uploading). This lets you test the UI flow
-// without a real Firebase project.
-// ============================================================
+
 
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import { storage, isFirebaseConfigured } from '../firebase/config'

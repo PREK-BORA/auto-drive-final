@@ -16,32 +16,7 @@ function getImageUrl(image) {
   return "";
 }
 
-// ============================================================
-// Vehicle Card
-// ============================================================
-//
-// Displays:
-// - Vehicle image
-// - Vehicle status
-// - Favorite button
-// - Brand and name
-// - Year
-// - Fuel type
-// - Transmission
-// - Price
-// - Details button
-//
-// Image flow:
-// Cloudinary
-//     ↓
-// image URL
-//     ↓
-// Firestore vehicles.images[]
-//     ↓
-// VehicleCard
-//     ↓
-// <img src={imageUrl} />
-// ============================================================
+
 
 export default function VehicleCard({ vehicle }) {
   const { user } = useAuth();
@@ -49,37 +24,14 @@ export default function VehicleCard({ vehicle }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [favoriteLoading, setFavoriteLoading] = useState(false);
 
-  // ============================================================
-  // Default fallback image
-  // ============================================================
 
   const fallbackImage =
     "https://images.pexels.com/photos/170782/pexels-photo-170782.jpeg?auto=compress&cs=tinysrgb&w=800";
 
-  // ============================================================
-  // Get first image
-  // ============================================================
-  //
-  // vehicle.images can contain legacy URL strings or Cloudinary objects:
-  //
-  // [
-  //   "https://res.cloudinary.com/....jpg",
-  //   { url: "https://res.cloudinary.com/....jpg", publicId: "..." }
-  // ]
-  //
-  // ============================================================
 
   const imageUrl = getImageUrl(vehicle?.images?.[0]) || fallbackImage;
 
-  // ============================================================
-  // Check vehicle availability
-  // ============================================================
-
   const isAvailable = vehicle?.status === "available";
-
-  // ============================================================
-  // Check favorite status
-  // ============================================================
 
   useEffect(() => {
     let cancelled = false;
@@ -114,10 +66,6 @@ export default function VehicleCard({ vehicle }) {
       cancelled = true;
     };
   }, [user?.uid, vehicle?.id]);
-
-  // ============================================================
-  // Toggle favorite
-  // ============================================================
 
   const toggleFavorite = async (e) => {
     // Prevent opening the Details link

@@ -1,11 +1,4 @@
-// ============================================================
-// Authentication Service
-// ============================================================
-//
-// Handles user registration, login, logout, password reset,
-// and profile management. Uses Firebase Auth when configured,
-// otherwise falls back to a mock auth using localStorage.
-// ============================================================
+
 
 import {
   createUserWithEmailAndPassword,
